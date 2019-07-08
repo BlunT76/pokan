@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #333333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+hr {
+  height: 2px;
+  color: #DC3545;
+  background-color: #DC3545;
+  width: 94%;
+  border: none;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.react-icons {
+  vertical-align: 'bottom';
+  margin-bottom: 0.2em;
+  size: 2em !important;
+}
+
+.no-border {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #999999;
+  box-shadow: none;
+}
+
+.projectsList {
+  border: 0;
+  border-radius: 0;
+  padding: 0.2rem;
+}
+
+.tasks {
+  position: relative;
+  width: 100%;
+}
+
+.list {
+  background-color: #fff  ;
+}
+
+.shadow {
+  box-shadow: 0 0.2rem 0.8rem rgba(192, 6, 6, 0.205)!important;
+}
+
+.card-body {
+  padding: 2px;
+}
+
+.btn {
+  /* padding: 3px; */
+  border-radius: 0;
+}
+
+.btn-small {
+  border: none;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover {
+  /* z-index: 1; */
+  color: #495057;
+  text-decoration: none;
+  /* background-color: #f8f9fa; */
+  background-color: #D4EDDA;
+}
+
+.trash {
+  background: transparent;
+}
+
+.round {
+  /* border: 0;
+  border-radius: 0; */
+  /* border-bottom: 1px solid #999999; */
+  box-shadow: none;
+  /* border-radius: 100%; */
+  /* margin-bottom: -0.2rem; */
+  /* margin-bottom: 0.2rem !important; */
+  /* padding: 0.2rem !important; */
+  border: none;
+}
+
