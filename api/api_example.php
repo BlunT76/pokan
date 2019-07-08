@@ -2,7 +2,7 @@
 require_once './vendor/autoload.php';
 use Firebase\JWT\JWT;
 
-/* ----------CONGIG---------- */
+/* ----------CONFIG---------- */
 
 // connect to the mysql database
 $db = mysqli_connect('db url', 'user', 'password', 'db name');
@@ -18,7 +18,7 @@ $forbiddenTables = ['users'];
 $client = 'http://localhost:3000';
 
 
-/* ----------END CONGIG---------- */
+/* ----------END CONFIG---------- */
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
