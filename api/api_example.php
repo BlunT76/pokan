@@ -5,11 +5,11 @@ use Firebase\JWT\JWT;
 /* ----------CONFIG---------- */
 
 // connect to the mysql database
-$db = mysqli_connect('db url', 'user', 'password', 'db name');
+$db = mysqli_connect('dbhost', 'username', 'pass', 'dbname');
 mysqli_set_charset($db, 'utf8');
 
 // JWT secret
-define('JWT_SECRET', 'change the secret phrase');
+define('JWT_SECRET', 'secret phrase');
 
 // Forbidden tables
 $forbiddenTables = ['users'];
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $table == 'login') {
     header('Access-Control-Allow-Origin: '. $client);
     header('Access-Control-Allow-Methods: POST, OPTIONS');
     header('Access-Control-Allow-Headers: authorization, token, Content-Type, origin, access-control-allow-origin');
-    header('Access-Control-Max-Age: 1728000');
+    header('Access-Control-Max-Age: no-store, no-cache, must-revalidate, max-age=0');
     // header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     header('Content-Type: application/json');
     header('Access-Control-Allow-Credentials: true');
@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'PUT') {
     header('Access-Control-Allow-Origin: '. $client);
     header('Access-Control-Allow-Methods: PUT, OPTIONS');
     header('Access-Control-Allow-Headers: authorization, token, Content-Type, origin');
-    header('Access-Control-Max-Age: 1728000');
+    header('Access-Control-Max-Age: no-store, no-cache, must-revalidate, max-age=0');
     // header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     header('Content-Type: application/json');
     header('Access-Control-Allow-Credentials: true');
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
     header('Access-Control-Allow-Origin: '. $client);
     header('Access-Control-Allow-Methods: DELETE, OPTIONS');
     header('Access-Control-Allow-Headers: authorization, token, Content-Type, origin, access-control-allow-origin');
-    header('Access-Control-Max-Age: 1728000');
+    header('Access-Control-Max-Age: no-store, no-cache, must-revalidate, max-age=0');
     // header("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
     header('Content-Type: application/json');
     header('Access-Control-Allow-Credentials: true');

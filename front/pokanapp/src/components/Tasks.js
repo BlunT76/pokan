@@ -108,7 +108,6 @@ class Tasks extends Component {
                     key={e.id}
                   >
                     <Card.Body className="m-0 text-left text-wrap">{e.desc}</Card.Body>
-                    <Card.Footer>test</Card.Footer>
                   </Card>
                 );
               }
